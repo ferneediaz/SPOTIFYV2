@@ -1,12 +1,8 @@
-
-import { getProviders, signIn, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Image from "next/image";
-import { useEffect } from "react";
-
-import Loader from '../../components/Loader';
-
+import Dashboard from "../../components/dashboard";
+import Loader from "../../components/Loader";
 
 export default function Home() {
   const router = useRouter();

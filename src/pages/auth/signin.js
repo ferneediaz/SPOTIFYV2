@@ -4,7 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import Loader from "../../../components/Loader";
-import { useSession } from "next-auth/client";
 
 function Signin({ providers }) {
   const { data: session } = useSession();
@@ -34,7 +33,12 @@ function Signin({ providers }) {
       ;
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
-          <button style={{ backgroundColor: "#1db954", color: "white", borderRadius: "9999px", padding: "12px 16px", fontSize: "14px", fontWeight: "bold", textTransform: "uppercase", border: "none", cursor: "pointer" }} onClick={() => Signin(provider.id)}>Sign in with {provider.name}</button>
+          <button
+            className="text-white py-4 px-6 rounded-full bg-[#1db954] transition duration-300 ease-out border border-transparent uppercase font-bold text-xs md:text-base tracking-wider hover:scale-105 hover:bg-[#0db146]"
+            onClick={() => signIn(provider.id)}
+          >
+            Sign in with {provider.name}
+          </button>
         </div>
       ))}
     </div>

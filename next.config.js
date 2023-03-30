@@ -13,5 +13,10 @@ const nextConfig = {
     minimumCacheTTL: 1500000,
   },
 };
+module.exports = {
+  images: {
+    domains: ['rb.gy'],
+  },
+}
 
 module.exports = nextConfig;
