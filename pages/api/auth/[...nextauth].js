@@ -53,7 +53,7 @@ export default NextAuth({
       clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
       clientSecret: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
       authorizationUrl:
-        "https://accounts.spotify.com/authorize?response_type=code",
+        "https://accounts.spotify.com/authorize?response_type=code&redirect_uri=http://localhost:3000/api/auth/callback/spotify",
       scope: [
         "user-read-email",
         "playlist-read-private",
@@ -69,6 +69,9 @@ export default NextAuth({
       ].join(" "),
     }),
   ],
+  // ...
+});
+
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user, account }) {
