@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import Loader from "@/components/Loader";
 
-const Signin = ({ providers }) => {
+function Signin({ providers }) {
   const { data: session } = useSession();
   const router = useRouter();
 
@@ -30,6 +30,7 @@ const Signin = ({ providers }) => {
         className="animate-pulse object-contain"
         alt="alt"
       />
+      ;
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button
@@ -42,7 +43,7 @@ const Signin = ({ providers }) => {
       ))}
     </div>
   );
-};
+}
 
 export default Signin;
 
