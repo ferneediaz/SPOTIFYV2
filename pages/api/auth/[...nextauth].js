@@ -52,13 +52,11 @@ export default NextAuth({
       SpotifyProvider({
         clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
         clientSecret: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
-        authorizationUrl: "https://accounts.spotify.com/authorize",
-        authorizationParams: {
-          scope:
-            "user-read-email playlist-read-private user-read-email streaming user-read-private user-library-read user-library-modify user-read-playback-state user-modify-playback-state user-read-recently-played user-follow-read",
-        },
-      }),
-    ],
+        authorization:
+        "https://accounts.spotify.com/authorize?scope=user-read-email,playlist-read-private,user-read-email,streaming,user-read-private,user-library-read,user-library-modify,user-read-playback-state,user-modify-playback-state,user-read-recently-played,user-follow-read",
+    }),
+  ],
+    
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user, account }) {
