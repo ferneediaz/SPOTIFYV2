@@ -1,7 +1,7 @@
 
 import NextAuth from 'next-auth';
 import SpotifyProvider from 'next-auth/providers/spotify';
-import nextAuthConfig from './next-auth.config';
+import nextAuthConfig from '../next-auth.config';
 /**
  * Takes a token, and returns a new token with updated
  * `accessToken` and `accessTokenExpires`. If an error occurs,
