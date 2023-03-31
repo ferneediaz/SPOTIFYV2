@@ -1,8 +1,7 @@
 
-
-import NextAuth from "next-auth";
-import SpotifyProvider from "next-auth/providers/spotify";
-
+import NextAuth from 'next-auth';
+import SpotifyProvider from 'next-auth/providers/spotify';
+import nextAuthConfig from './next-auth.config';
 /**
  * Takes a token, and returns a new token with updated
  * `accessToken` and `accessTokenExpires`. If an error occurs,
@@ -49,6 +48,7 @@ async function refreshAccessToken(token) {
 }
 
 export default NextAuth({
+  ...nextAuthConfig,
   providers: [
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID,
@@ -56,6 +56,7 @@ export default NextAuth({
       authorization: "https://accounts.spotify.com/authorize",
       scope: "user-read-email playlist-read-private user-read-email streaming user-read-private user-library-read user-library-modify user-read-playback-state user-modify-playback-state user-read-recently-played user-follow-read"
     }),
+    // Add any other providers here
   ],
 
   callbacks: {
