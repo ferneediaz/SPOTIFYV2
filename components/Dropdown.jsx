@@ -4,7 +4,7 @@
         import { LogoutIcon } from "@heroicons/react/outline";
         import { signOut, useSession } from "next-auth/react";
 
-         function Dropdown() {
+         const Dropdown = () => {
         const { data: session } = useSession();
 
         return (

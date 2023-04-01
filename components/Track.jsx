@@ -5,7 +5,7 @@ import { useRecoilState } from "recoil";
 import { playingTrackStateKey, playState } from "../atoms/playerAtom";
 import { ImHeadphones } from "react-icons/im";
 
-function Track({ track, chooseTrack }) {
+const Track = ({ track, chooseTrack }) => {
   const [hasLiked, setHasLiked] = useState(false);
   const [play, setPlay] = useRecoilState(playState);
   const [playingTrack, setPlayingTrack] = useRecoilState(playingTrackStateKey);

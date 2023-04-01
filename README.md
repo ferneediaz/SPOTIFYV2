@@ -1,38 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpotifyV2
+
+<!-- Add screenshots of the application here -->
+<img src="https://imgur.com/oulPGq5.png" alt="Desktop Screenshot" width="500"> <img src="https://imgur.com/ogwKVYP.png" alt="Mobile Screenshot" width="300">
+
+
+## TECH STACK
+
+The frontend of this application was built using NEXT.js, a powerful framework that provides server-side rendering, resulting in improved performance and search engine optimization. NEXT.js also features built-in TypeScript support, which enhances code reliability and maintainability.
+
+Tailwind CSS, a utility-first CSS framework, was utilized to swiftly and consistently style components. With a vast community and well-documented resources, Tailwind CSS enabled us to rapidly overcome any styling hurdles encountered during development.
+
+To manage the application's state in a scalable and efficient manner, RecoilJS, a lightweight and user-friendly state management library that seamlessly integrates with React components, was employed.
+
+Please note that the player might not work if you're using a free account, spotify terms of use prohibits the use of player of free users.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the application, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository:
+git clone https://github.com/your-username/spotifyv2.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. Install the dependencies:
+cd spotifyv2
+npm install
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Go to the Spotify Developers website: https://developer.spotify.com/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Click on the "Dashboard" button in the top right corner of the page.
 
-## Learn More
+If you don't already have a Spotify account, create one by clicking on the "Sign Up" button and following the instructions.
 
-To learn more about Next.js, take a look at the following resources:
+5. Once you have logged in, click on the "Create a Client ID" button.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Fill in the required information, such as the name of your app and its description.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. Choose the type of application you are building. For example, if you are building a web application, choose "Web".
 
-## Deploy on Vercel
+8. Add the website URL where your application will be hosted. This is usually http://localhost:3000 for development purposes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9.Click on the "Create" button.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+10.You will now see your client ID and client secret. Copy them and paste them into your .env.local file, which you created in the previous step.
+
+11. Save the .env.local file and start the development server by running the command npm run dev.
+
+## Contributing
+
+Contributions are welcome to the project!
+
+## License
+
+This project is licensed under the MIT License.
