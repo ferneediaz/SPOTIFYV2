@@ -15,7 +15,17 @@ function Signin({ providers }) {
     }
   }, [session]);
 
-  if (session) return <Loader />;
+  if (session) {
+    console.log("Session exists:", session);
+    return <Loader />;
+  }
+
+  console.log("Providers:", providers);
+
+  if (!providers) {
+    console.log("Providers is null or undefined");
+    return null;
+  }
 
   return (
     <div className="bg-black h-screen flex flex-col items-center pt-40 space-y-8">
@@ -30,7 +40,6 @@ function Signin({ providers }) {
         className="animate-pulse object-contain"
         alt="alt"
       />
-      ;
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button
@@ -49,6 +58,7 @@ export default Signin;
 
 export async function getServerSideProps() {
   const providers = await getProviders();
+  console.log("Providers:", providers);
   return {
     props: { providers },
   };

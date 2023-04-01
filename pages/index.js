@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Spotify V2</title>
-        <link rel="icon" href="https://iili.io/HWoR6mu.png" />
+        <title>Spotify - Dashboard</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Dashboard />
     </div>
