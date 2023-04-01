@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpotifyV2
 
-## Getting Started
+<!-- Add screenshots of the application here -->
+![Screenshot 1](/public/images/screenshot1.png)
 
-First, run the development server:
+![Screenshot 2](/public/images/screenshot2.png)
+
+## <span style="font-family: Arial; font-size: 1.5em;">Why NEXT.js, Tailwind CSS, and RecoilJS?</span>
+
+<span style="font-family: Arial; font-size: 1.2em;">We chose NEXT.js as our frontend framework because it provides server-side rendering, which improves the performance and SEO of our application. It also has built-in support for TypeScript, which makes our code more reliable and easier to maintain.</span>
+
+<span style="font-family: Arial; font-size: 1.2em;">Tailwind CSS is a utility-first CSS framework that helps us style our components quickly and consistently. It also has a large community and great documentation, so we can easily find solutions to any styling issues we encounter.</span>
+
+<span style="font-family: Arial; font-size: 1.2em;">RecoilJS is a state management library that helps us manage the state of our application in a simple and scalable way. It's lightweight, easy to use, and integrates well with React components.</span>
+
+<span style="font-family: Arial; font-size: 1.2em;">Please note that the Spotify player will only work if your account is in premium. Also, the terms of use in Spotify Web API do not allow us to enable playback for free accounts.</span>
+
+## <span style="font-family: Arial; font-size: 1.5em;">Getting Started</span>
+
+<span style="font-family: Arial; font-size: 1.2em;">To get started with the application, follow these steps:</span>
+
+1. Clone the repository:
 
 ```bash
+git clone https://github.com/your-username/spotifyv2.git
+Install the dependencies:
+cd spotifyv2
+npm install
+Set up environment variables:
+Copy the .env.example file to .env.local and fill in the necessary variables:
+
+cp .env.example .env.local
+Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<span style="font-family: Arial; font-size: 1.5em;">Contributing</span>
+<span style="font-family: Arial; font-size: 1.2em;">We welcome contributions to the project! Please see the contribution guidelines for more information.</span>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<span style="font-family: Arial; font-size: 1.5em;">License</span>
+<span style="font-family: Arial; font-size: 1.2em;">This project is licensed under the MIT License.</span>
