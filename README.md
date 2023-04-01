@@ -12,7 +12,7 @@ Tailwind CSS, a utility-first CSS framework, was utilized to swiftly and consist
 
 To manage the application's state in a scalable and efficient manner, RecoilJS, a lightweight and user-friendly state management library that seamlessly integrates with React components, was employed.
 
-Please note that Spotify playback is only available to Premium account holders. Furthermore, Spotify Web API's terms of use prohibit enabling playback for free accounts.
+Please note that the player might not work if you're using a free account, spotify terms of use prohibits the use of player of free users.
 
 ## Getting Started
 
