@@ -49,10 +49,8 @@ If you don't already have a Spotify account, create one by clicking on the "Sign
 
 ## Contributing
 
-We welcome contributions to the project! Please see the contribution guidelines for more information.
+Contributions are welcome to the project!
 
 ## License
 
 This project is licensed under the MIT License.
-Like
-Dislike
