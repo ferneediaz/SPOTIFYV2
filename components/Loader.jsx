@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Loader() {
+const Loader = () => {
   return (
     <div className="h-screen bg-black">
       <div className="pt-40 flex flex-col items-center space-y-4">
