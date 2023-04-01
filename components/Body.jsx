@@ -4,7 +4,7 @@ import Poster from "./Poster";
 import Search from "./Search";
 import Track from "./Track";
 
-function Body({ spotifyApi, chooseTrack }) {
+const Body = ({ spotifyApi, chooseTrack }) => {
   const { data: session } = useSession();
   const accessToken = session?.accessToken;
   const [search, setSearch] = useState("");
