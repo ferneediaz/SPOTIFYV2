@@ -71,7 +71,6 @@ SpotifyProvider({
       "http://localhost:8888/callback",
     ],
   },
-}),
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user, account }) {
@@ -100,5 +99,5 @@ SpotifyProvider({
 
       return session;
     },
-  },
+  }
 });
