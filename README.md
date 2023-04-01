@@ -1,10 +1,10 @@
 # SpotifyV2
 
 <!-- Add screenshots of the application here -->
-![Screenshot 1](https://imgur.com/k7y5iLm.png)
-![Screenshot 2](https://imgur.com/5B53dLm.png)
+<img src="https://imgur.com/k7y5iLm.png" alt="Desktop Screenshot" width="500"> <img src="https://imgur.com/5B53dLm.png" alt="Mobile Screenshot" width="300">
 
-## Why NEXT.js, Tailwind CSS, and RecoilJS?
+
+## TECH STACK
 
 We chose NEXT.js as our frontend framework because it provides server-side rendering, which improves the performance and SEO of our application. It also has built-in support for TypeScript, which makes our code more reliable and easier to maintain.
 
