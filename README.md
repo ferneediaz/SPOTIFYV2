@@ -1,8 +1,8 @@
 # SpotifyV2
 
 <!-- Add screenshots of the application here -->
-![Screenshot 1](https://imgur.com/k7y5iLm)
-![Screenshot 2](https://imgur.com/5eoAeH0)
+![Screenshot 1](https://imgur.com/k7y5iLm.png)
+![Screenshot 2](https://imgur.com/5B53dLm.png)
 
 ## Why NEXT.js, Tailwind CSS, and RecoilJS?
 
