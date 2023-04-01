@@ -46,31 +46,32 @@ async function refreshAccessToken(token) {
   }
 }
 
-export default NextAuth({
-  providers: [
-    SpotifyProvider({
-      clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
-      clientSecret: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
-      authorizationUrl:
-        "https://accounts.spotify.com/authorize?response_type=code",
-      scope: [
-        "user-read-email",
-        "playlist-read-private",
-        "user-read-email",
-        "streaming",
-        "user-read-private",
-        "user-library-read",
-        "user-library-modify",
-        "user-read-playback-state",
-        "user-modify-playback-state",
-        "user-read-recently-played",
-        "user-follow-read",
-      ].join(" "),
-      authorizationParams: {
-        redirect_uri: `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/auth/callback/spotify`,
-      },
-    }),
-  ],
+SpotifyProvider({
+  clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
+  clientSecret: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
+  authorizationUrl:
+    "https://accounts.spotify.com/authorize?response_type=code",
+  scope: [
+    "user-read-email",
+    "playlist-read-private",
+    "user-read-email",
+    "streaming",
+    "user-read-private",
+    "user-library-read",
+    "user-library-modify",
+    "user-read-playback-state",
+    "user-modify-playback-state",
+    "user-read-recently-played",
+    "user-follow-read",
+  ].join(" "),
+  authorizationParams: {
+    redirect_uris: [
+      "http://localhost:3000/api/auth/callback/spotify",
+      "https://spotifyv-2-pr9pnz9ak-ferneediaz.vercel.app/api/auth/callback/spotify",
+      "http://localhost:8888/callback",
+    ],
+  },
+}),
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user, account }) {
