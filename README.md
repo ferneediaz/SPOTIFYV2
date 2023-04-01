@@ -1,7 +1,7 @@
 # SpotifyV2
 
 <!-- Add screenshots of the application here -->
-<img src="https://imgur.com/k7y5iLm.png" alt="Desktop Screenshot" width="500"> <img src="https://imgur.com/5B53dLm.png" alt="Mobile Screenshot" width="300">
+<img src="https://imgur.com/oulPGq5.png" alt="Desktop Screenshot" width="500"> <img src="https://imgur.com/ogwKVYP.png" alt="Mobile Screenshot" width="300">
 
 
 ## TECH STACK
