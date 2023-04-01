@@ -27,15 +27,25 @@ cd spotifyv2
 npm install
 
 
-3. Set up environment variables:
+3. Go to the Spotify Developers website: https://developer.spotify.com/
 
-Copy the .env.example file to .env.local and fill in the necessary variables:
-cp .env.example .env.local
+4. Click on the "Dashboard" button in the top right corner of the page.
 
+If you don't already have a Spotify account, create one by clicking on the "Sign Up" button and following the instructions.
 
-4. Start the development server:
-npm run dev
+5. Once you have logged in, click on the "Create a Client ID" button.
 
+6. Fill in the required information, such as the name of your app and its description.
+
+7. Choose the type of application you are building. For example, if you are building a web application, choose "Web".
+
+8. Add the website URL where your application will be hosted. This is usually http://localhost:3000 for development purposes.
+
+9.Click on the "Create" button.
+
+10.You will now see your client ID and client secret. Copy them and paste them into your .env.local file, which you created in the previous step.
+
+11. Save the .env.local file and start the development server by running the command npm run dev.
 
 ## Contributing
 
