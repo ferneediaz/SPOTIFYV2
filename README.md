@@ -1,7 +1,7 @@
 # SpotifyV2
 
 <!-- Add screenshots of the application here -->
-![Screenshot 1](https://imgur.com/q5Rlv5X)
+![Screenshot 1] (https://imgur.com/k7y5iLm)
 
 ![Screenshot 2](https://imgur.com/5eoAeH0)
 
