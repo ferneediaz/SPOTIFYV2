@@ -66,7 +66,7 @@ function Body({ spotifyApi, chooseTrack }) {
     ));
 
   return (
-    <div className="bg-black ml-24 py-4 space-y-8 md:max-w-6xl flex-grow md:mr-5">
+    <div className="bg-black ml-24 py-1 space-y-2 md:max-w-6xl flex-grow md:mr-5">
       <Search search={search} setSearch={setSearch} />
       <div className="flex items-center justify-between">
         <h2 className="text-white font-bold mb-3">
