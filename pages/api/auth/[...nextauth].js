@@ -88,9 +88,4 @@ export default NextAuth({
   pages: {
     signIn: "/login",
   },
-  debug: process.env.NODE_ENV === "development",
-  cookies: {
-    secure: process.env.NODE_ENV === "production",
-  },
-  baseUrl: process.env.NEXTAUTH_URL,
 });
