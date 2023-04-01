@@ -1,7 +1,5 @@
 import NextAuth from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
-import { Adapters } from "@next-auth/core";
-import { PrismaClient } from "@prisma/client";
 
 async function refreshAccessToken(token) {
   try {
@@ -43,8 +41,6 @@ async function refreshAccessToken(token) {
     };
   }
 }
-
-const prisma = new PrismaClient();
 
 export default NextAuth({
   providers: [
@@ -95,11 +91,6 @@ export default NextAuth({
   debug: process.env.NODE_ENV === "development",
   cookies: {
     secure: process.env.NODE_ENV === "production",
-  },
-  adapter: Adapters.Prisma.Adapter({ prisma }),
-  database: process.env.DATABASE_URL,
-  session: {
-    jwt: true,
   },
   baseUrl: process.env.NEXTAUTH_URL,
 });
