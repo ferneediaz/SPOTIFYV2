@@ -2,7 +2,7 @@ import { BsFillPlayFill, BsFillPauseFill } from "react-icons/bs";
 import { AiFillHeart } from "react-icons/ai";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
-import { playingTrackStateKey,playState } from "@/atoms/playerAtom";
+import { playingTrackStateKey, playState } from "../atoms/playerAtom";
 import { ImHeadphones } from "react-icons/im";
 
 function Track({ track, chooseTrack }) {

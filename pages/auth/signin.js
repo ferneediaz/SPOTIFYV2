@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
-import Loader from "@/components/Loader";
+import Loader from "../../components/Loader";
 
 function Signin({ providers }) {
   const { data: session } = useSession();
@@ -15,17 +15,7 @@ function Signin({ providers }) {
     }
   }, [session]);
 
-  if (session) {
-    console.log("Session exists:", session);
-    return <Loader />;
-  }
-
-  console.log("Providers:", providers);
-
-  if (!providers) {
-    console.log("Providers is null or undefined");
-    return null;
-  }
+  if (session) return <Loader />;
 
   return (
     <div className="bg-black h-screen flex flex-col items-center pt-40 space-y-8">
@@ -58,7 +48,6 @@ export default Signin;
 
 export async function getServerSideProps() {
   const providers = await getProviders();
-  console.log("Providers:", providers);
   return {
     props: { providers },
   };
