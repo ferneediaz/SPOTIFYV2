@@ -8,9 +8,9 @@
 
 The frontend of this application was built using NEXT.js, a powerful framework that provides server-side rendering, resulting in improved performance and search engine optimization. NEXT.js also features built-in TypeScript support, which enhances code reliability and maintainability.
 
-Our team utilized Tailwind CSS, a utility-first CSS framework, to swiftly and consistently style components. With a vast community and well-documented resources, Tailwind CSS enabled us to rapidly overcome any styling hurdles we encountered.
+Tailwind CSS, a utility-first CSS framework, was utilized to swiftly and consistently style components. With a vast community and well-documented resources, Tailwind CSS enabled us to rapidly overcome any styling hurdles encountered during development.
 
-To manage the application's state in a scalable and efficient manner, we employed RecoilJS, a lightweight and user-friendly state management library that seamlessly integrates with React components.
+To manage the application's state in a scalable and efficient manner, RecoilJS, a lightweight and user-friendly state management library that seamlessly integrates with React components, was employed.
 
 Please note that Spotify playback is only available to Premium account holders. Furthermore, Spotify Web API's terms of use prohibit enabling playback for free accounts.
 
