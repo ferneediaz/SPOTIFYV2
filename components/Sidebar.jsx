@@ -2,8 +2,10 @@ import {
     ChartBarIcon,
     ClockIcon,
     DotsHorizontalIcon,
-    HomeIcon,
+    
   } from "@heroicons/react/solid";
+  import { HomeIcon } from '@heroicons/react/solid'
+
   import { FaMicrophoneAlt } from "react-icons/fa";
   import { RiCompassFill } from "react-icons/ri";
   import Image from "next/image";
