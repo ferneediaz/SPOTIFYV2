@@ -12,7 +12,7 @@ const spotifyApi = new SpotifyWebApi({
   clientId: process.env.SPOTIFY_CLIENT_ID,
 });
 
-function Dashboard() {
+const Dashboard = () => {
   const { data: session } = useSession();
   const { accessToken } = session;
 
