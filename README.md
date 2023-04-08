@@ -6,7 +6,7 @@
 
 ## TECH STACK
 
-The frontend of this application was built using NEXT.js, a powerful framework that provides server-side rendering, resulting in improved performance and search engine optimization. NEXT.js also features built-in TypeScript support, which enhances code reliability and maintainability.
+The frontend of this application was built using NEXT.js, a powerful framework that provides server-side rendering, resulting in improved performance and search engine optimization.
 
 Tailwind CSS, a utility-first CSS framework, was utilized to swiftly and consistently style components. With a vast community and well-documented resources, Tailwind CSS enabled us to rapidly overcome any styling hurdles encountered during development.
 
