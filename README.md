@@ -8,7 +8,7 @@
 
 The frontend of this application was built using NEXT.js, a powerful framework that provides server-side rendering, resulting in improved performance and search engine optimization.
 
-Tailwind CSS, a utility-first CSS framework, was utilized to swiftly and consistently style components. With a vast community and well-documented resources, Tailwind CSS enabled us to rapidly overcome any styling hurdles encountered during development.
+Tailwind CSS was chosen as the CSS framework for this project because of its utility-first approach, which makes it easy to rapidly prototype and iterate on designs without writing custom CSS. With Tailwind, we were able to create a consistent and responsive design system by simply composing pre-defined CSS classes together, saving us a lot of time and effort in the development process. Additionally, Tailwind's flexibility allowed us to easily customize our styles to match the specific needs of the project, making it a great fit for our requirements.
 
 To manage the application's state in a scalable and efficient manner, RecoilJS, a lightweight and user-friendly state management library that seamlessly integrates with React components, was employed.
 
