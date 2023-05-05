@@ -2,13 +2,17 @@ import { MdOutlineShortText } from "react-icons/md";
 import { useState, useEffect } from "react";
 
 function Search({ search, setSearch }) {
+  // State variable to keep track of the timeout ID returned by setTimeout
   const [typingTimeout, setTypingTimeout] = useState(0);
 
+  // Function to handle changes to the search input
   const handleSearchChange = (e) => {
     const searchText = e.target.value;
+    // If there is a timeout already set, clear it
     if (typingTimeout) {
       clearTimeout(typingTimeout);
     }
+    // Set a new timeout of 500ms before calling setSearch with the new search text
     setTypingTimeout(
       setTimeout(() => {
         setSearch(searchText);
